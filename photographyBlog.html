@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The O(n) Shutter - Photography Blog Of An Engineer</title>
+        <meta name="description" content="Some photos taken by Navaneeth and the stories behind them">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <div class="page-container">
+            <header id="header">
+                <h2 id="site-name"><a href="#">The O(n) Shutter - Photography Blog Of An Engineer</a></h2>
+                <nav id="main-menu">
+                    <h3 class="hidden">Main navigation</h3>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Photo stories</a></li>
+                        <li><a href="#">Editing Techniques</a></li>
+                        <li><a href="#">Camera Gear</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="page-container">
+            <div class="column middle">
+                <main id="main">
+                    <h1>Why I like matte black photos and how to achieve them.</h1>
+                    <p><img src="images/dance_of_light_shadow.jpg" alt="Image of a pot with plants hanging on a rope" class="image-main" /></p>
+                    <p>Have you ever wondered why some photos published by artists have this off black color to it? This is a very popular inbuilt filter in many camera apps and photo editing and sharing apps as well.</p>
+                    <section>
+                        <h2>What does <em>matte black pictures</em> mean?</h2>
+                        <p>Simply put, the matte black pictures is nothing but images which lacks true black color RGB(0,0,0) and all the true black color is replaced by a grey color, eg RGB(64,64,64). The working behind this format is by replacing a range of grayscale pixels by a single black color, lets say replacing all the pixels having colors from RGB(0, 0, 0) to RGB(64, 64, 64) with RGB(64, 64, 64).</p>
+                        <p><img src="images/rain_monochromatic.jpg" alt="Image of raindrops falling from a roof" class="image-main" /></p>
+                    </section>
+                    <section>
+                        <h2>Why am I interested in them?</h2>
+                        <p>While many prefer to have maximum details on each composition, I prefer to leave few details left to the imagination of the viewer. Lets look at this picture of a Budha statue made of wood, while this will look equally good with true black color, the grey background removes all unimportant things form the background thereby inviting the viewer to the subject.</p>
+                        <p><img src="images/budha.jpg" alt="Image of a wooden Budha statue" class="image-main" /></p>
+                    </section>
+                    <section>
+                        <h2>How to set it in Lightroom/Photoshop using Curves</h2>
+                        <ol>
+                            <li>Load the image in Photoshop/Lightroom or any equivalent application.</li>
+                            <li>Select <em>Image > Adjustments > Curves</em> or use the hotkey <em>Ctrl + M</em>.</li>
+                            <li>Select the (0,0) (output,input) point in the curve and move the output to something in the range of 40-50, example (45,0) point.</li>
+                            <li>Note: If the image looks too much washed away, follow this procedure.
+                            <ol>
+                                <li>In the curve, adjust the middle point by bringing the output point from (158,128) to (117,128).</li>
+                                <li>Keep on adjusting the curve until you get the desired result.</li>
+                            </ol></li> 
+                        </ol>
+                        <p><img src="images/curveNormal.JPG" alt="Image of default light curve in photoshop" class="image-main curve" />
+                        <img src="images/curveEdited.JPG" alt="Image of edited light curve in photoshop" class="image-main curve" />
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Before and After</h2>
+                        <p><img src="images/roadUnedited.jpg" alt="image of a road unedited with curves" class="image-main road" />
+                        <img src="images/roadMatteBlack.jpg" alt="image of a road edited with curves" class="image-main road" /></p>
+                    </section>
+                    <section>
+                        <h2>Similar Photos</h2>
+                        <p>
+                            <img src="images/train.jpg" alt="image of a railway station" class="image-main similar_photos" />
+                            <img src="images/kathakali.jpg" alt="image of a kathakali artist" class="image-main similar_photos" />
+                            <img src="images/rain_color.jpg" alt="image of rain" class="image-main similar_photos" />
+                            <img src="images/diya.jpg" alt="image of a lighter diyas/lights" class="image-main similar_photos" />
+                        </p>
+                    </section>
+                    <footer id="comment_section">
+                        <div id="registration_form">
+                            <form>
+                                <h2>Leave a Comment</h2>
+                                <label for="comment" class="label_add">Your Comment: </label>
+                                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Comment*" ></textarea>
+                                <label for="your_name">Your Name: </label>
+                                <input id="your_name" type="text" placeholder="John Doe">
+                                <label for="your_email">Your Email: </label>
+                                <input id="your_email" type="text" placeholder="johndoe@example.com">
+                                <label for="your_website">Your Website: </label>
+                                <input id="your_website" type="text" placeholder="www.sample.com">
+                                <div>
+                                    <input type="submit" class="button" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </footer>
+                </main>
+            </div>
+            <div class="column left">
+                <aside id="sidebar-left" class="sidebar">
+                    <h2 id="left-sidebar-title">Social Media Sidebar</h2>
+                    <ul>
+                        <li><a href="#">InstagramLink</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="column right">
+                <aside id="sidebar-right" class="sidebar">
+                    <h2 id="right-sidebar-title">More Posts</h2>
+                    <p><a href="#"><img src="images/diya.jpg" alt="image of a lamp">How to take photos of lamps at night</a><span>&nbsp;&nbsp;A small introduction to taking photos at night when the......</span></p>
+                    <p><a href="#"><img src="images/rain_color.jpg" alt="image of rain">How to take photos of rain drops</a><span>&nbsp;&nbsp;A small introduction to taking photos of rain drops when the......</span></p>
+                    <p><a href="#"><img src="images/train.jpg" alt="image of train">How to take candid street photos</a><span>&nbsp;&nbsp;A small introduction to taking candid street photography......</span></p>
+                </aside>
+            </div>
+        </div>
+        <footer id="footer">
+            <div>&#169; Navaneeth Ashok, 2021.</div>
+            <div><strong>Copyright Notification : </strong>All the images except the two photos shown in the Before and After section are taken by the author and should <em>not</em> be used without permission. The road photo is taken from wallhaven.cc and is <em>not</em> copyright protected. <em></em> </div>
+        </footer>
+    </body>
+</html>
