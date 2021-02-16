@@ -9,34 +9,57 @@
     <body>
         <div class="page-container">
             <header id="header">
-                <h2 id="site-name"><a href="#">The O(n) Shutter - Photography Blog Of An Engineer</a></h2>
+                <h2 id="site-name"><a href="#">The O(n) Shutter - Photography Blog of an Engineer</a></h2>
                 <nav id="main-menu">
                     <h3 class="hidden">Main navigation</h3>
                     <ul class="menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Photo stories</a></li>
-                        <li><a href="#">Editing Techniques</a></li>
-                        <li><a href="#">Camera Gear</a></li>
+                        <li>
+                            <a href="#">Photo stories</a>
+                            <ul class="submenu">
+                                <li><a href="#">Portraits</a></li>
+                                <li><a href="#">Cars</a></li>
+                                <li><a href="#">Street</a></li>
+                                <li><a href="#">Wedding</a></li>
+                                <li><a href="#">Landscapes</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Editing Techniques</a>
+                            <ul>
+                                <li><a href="#">Lightroom</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Camera Gear</a>
+                            <ul>
+                                <li><a href="#">Camera</a></li>
+                                <li><a href="#">Lens</a></li>
+                                <li><a href="#">Flash</a></li>
+                                <li><a href="#">Tripod</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </header>
         </div>
         <div class="page-container">
-            <div class="column middle">
+            <div class="column-middle">
                 <main id="main">
-                    <h1>Why I like matte black photos and how to achieve them.</h1>
-                    <p><img src="images/dance_of_light_shadow.jpg" alt="Image of a pot with plants hanging on a rope" class="image-main" /></p>
+                    <h1>Why I like matte black photos and how to achieve them</h1>
+                    <img src="images/dance_of_light_shadow.jpg" alt="Image of a pot with plants hanging on a rope" class="image-main showcase" />
                     <p>Have you ever wondered why some photos published by artists have this off black color to it? This is a very popular inbuilt filter in many camera apps and photo editing and sharing apps as well.</p>
                     <section>
                         <h2>What does <em>matte black pictures</em> mean?</h2>
                         <p>Simply put, the matte black pictures is nothing but images which lacks true black color RGB(0,0,0) and all the true black color is replaced by a grey color, eg RGB(64,64,64). The working behind this format is by replacing a range of grayscale pixels by a single black color, lets say replacing all the pixels having colors from RGB(0, 0, 0) to RGB(64, 64, 64) with RGB(64, 64, 64).</p>
-                        <p><img src="images/rain_monochromatic.jpg" alt="Image of raindrops falling from a roof" class="image-main" /></p>
+                        <img src="images/rain_monochromatic.jpg" alt="Image of raindrops falling from a roof" class="image-main showcase" />
                     </section>
                     <section>
                         <h2>Why am I interested in them?</h2>
                         <p>While many prefer to have maximum details on each composition, I prefer to leave few details left to the imagination of the viewer. Lets look at this picture of a Budha statue made of wood, while this will look equally good with true black color, the grey background removes all unimportant things form the background thereby inviting the viewer to the subject.</p>
-                        <p><img src="images/budha.jpg" alt="Image of a wooden Budha statue" class="image-main" /></p>
+                        <img src="images/budha.jpg" alt="Image of a wooden Budha statue" class="image-main budha showcase" />
                     </section>
                     <section>
                         <h2>How to set it in Lightroom/Photoshop using Curves</h2>
@@ -45,32 +68,33 @@
                             <li>Select <em>Image > Adjustments > Curves</em> or use the hotkey <em>Ctrl + M</em>.</li>
                             <li>Select the (0,0) (output,input) point in the curve and move the output to something in the range of 40-50, example (45,0) point.</li>
                             <li>Note: If the image looks too much washed away, follow this procedure.
-                            <ol>
+                            <ol type="a">
                                 <li>In the curve, adjust the middle point by bringing the output point from (158,128) to (117,128).</li>
                                 <li>Keep on adjusting the curve until you get the desired result.</li>
                             </ol></li> 
                         </ol>
-                        <p><img src="images/curveNormal.JPG" alt="Image of default light curve in photoshop" class="image-main curve" />
+                        <img src="images/curveNormal.JPG" alt="Image of default light curve in photoshop" class="image-main curve" />
                         <img src="images/curveEdited.JPG" alt="Image of edited light curve in photoshop" class="image-main curve" />
-                        </p>
+                        
                     </section>
                     <section>
                         <h2>Before and After</h2>
-                        <p><img src="images/roadUnedited.jpg" alt="image of a road unedited with curves" class="image-main road" />
-                        <img src="images/roadMatteBlack.jpg" alt="image of a road edited with curves" class="image-main road" /></p>
+                        <img src="images/roadUnedited.jpg" alt="image of a road unedited with curves" class="image-main roads" />
+                        <img src="images/roadMatteBlack.jpg" alt="image of a road edited with curves" class="image-main roads" />
                     </section>
                     <section>
                         <h2>Similar Photos</h2>
-                        <p>
-                            <img src="images/train.jpg" alt="image of a railway station" class="image-main similar_photos" />
-                            <img src="images/kathakali.jpg" alt="image of a kathakali artist" class="image-main similar_photos" />
-                            <img src="images/rain_color.jpg" alt="image of rain" class="image-main similar_photos" />
-                            <img src="images/diya.jpg" alt="image of a lighter diyas/lights" class="image-main similar_photos" />
-                        </p>
+                        
+                        <img src="images/train.jpg" alt="image of a railway station" class="image-main similar_photos" />
+                        <img src="images/kathakali.jpg" alt="image of a kathakali artist" class="image-main similar_photos" />
+                        <img src="images/rain_color.jpg" alt="image of rain" class="image-main similar_photos" />
+                        <img src="images/diya.jpg" alt="image of a lighter diyas/lights" class="image-main similar_photos" />
+                        
                     </section>
                     <footer id="comment_section">
                         <div id="registration_form">
-                            <form>
+                            <!--updated get method with post as per review comments-->
+                            <form action="#" method="post">
                                 <h2>Leave a Comment</h2>
                                 <label for="comment" class="label_add">Your Comment: </label>
                                 <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Comment*" ></textarea>
@@ -88,28 +112,41 @@
                     </footer>
                 </main>
             </div>
-            <div class="column left">
+            <div class="column-left">
                 <aside id="sidebar-left" class="sidebar">
-                    <h2 id="left-sidebar-title">Social Media Sidebar</h2>
-                    <ul>
-                        <li><a href="#">InstagramLink</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                    <h2 id="left-sidebar-title" class="hidden">Social Media links</h2>
+                    <!--All the icons are taken from icons8 and are not copyright protected.-->
+                    <ul class="social-media-icons">
+                        <li><a href="https://github.com/navaneeth-ashok"><img src="images/icons8-github-squared.svg" alt="github logo" class="social-media icons"/></a></li>
+                        <li><a href="https://instagram.com/navaneeth.ashok"><img src="images/icons8-instagram.svg" alt="instagram logo" class="social-media icons"/></a></li>
+                        <li><a href="https://www.facebook.com/navaneeth619/"><img src="images/icons8-facebook.svg" alt="facebook logo" class="social-media icons"/></a></li>
+                        <li><a href="https://www.linkedin.com/in/navaneeth-ashok"><img src="images/icons8-linkedin.svg" alt="linkedin logo" class="social-media icons"/></a></li>
                     </ul>
                 </aside>
             </div>
-            <div class="column right">
+            <div class="column-right">
                 <aside id="sidebar-right" class="sidebar">
                     <h2 id="right-sidebar-title">More Posts</h2>
-                    <p><a href="#"><img src="images/diya.jpg" alt="image of a lamp">How to take photos of lamps at night</a><span>&nbsp;&nbsp;A small introduction to taking photos at night when the......</span></p>
-                    <p><a href="#"><img src="images/rain_color.jpg" alt="image of rain">How to take photos of rain drops</a><span>&nbsp;&nbsp;A small introduction to taking photos of rain drops when the......</span></p>
-                    <p><a href="#"><img src="images/train.jpg" alt="image of train">How to take candid street photos</a><span>&nbsp;&nbsp;A small introduction to taking candid street photography......</span></p>
+                    <ul class="right_sidebar_list">
+                        <li class="li_image"><img src="images/diya.jpg" width=80 alt="Thumbnail image of a diya"></li>
+                        <li class="li_text"><a href="#">How to take photos of lamps at nights</a></li>
+                    </ul>
+                    <ul class="right_sidebar_list">
+                        <li class="li_image"><img src="images/rain_color.jpg" width=80 alt="Thumbnail image of a rain"></li>
+                        <li class="li_text"><a href="#">How to take photos of rain drops</a></li>
+                    </ul>
+                    <ul class="right_sidebar_list">
+                        <li class="li_image"><img src="images/train.jpg" width=80 alt="Thumbnail image of a train"></li>
+                        <li class="li_text"><a href="#">How to take candid street photos</a></li>
+                    </ul>
                 </aside>
             </div>
         </div>
-        <footer id="footer">
-            <div>&#169; Navaneeth Ashok, 2021.</div>
-            <div><strong>Copyright Notification : </strong>All the images except the two photos shown in the Before and After section are taken by the author and should <em>not</em> be used without permission. The road photo is taken from wallhaven.cc and is <em>not</em> copyright protected. <em></em> </div>
-        </footer>
+        <div class="page-container">
+            <footer id="footer">
+                <div>&#169; Navaneeth Ashok, 2021.</div>
+                <div><strong>Copyright Notification : </strong>All the images except the two photos shown in the Before and After section are taken by the author and should <em>not</em> be used without permission. The road photo is taken from wallhaven.cc and is <em>not</em> copyright protected. <em></em> </div>
+            </footer>
+        </div>
     </body>
 </html>
