@@ -325,6 +325,10 @@ img.social-media.icons {
     width:100%;
 }
 
+.li_image a{
+    font-size: 0.9em;
+}
+
 /*
 li{
     border: solid 1px orange;
